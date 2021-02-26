@@ -1,13 +1,258 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+	background-color: #E0E0E0;
+	width: 100vw;
+	height: 100%;
+	
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.title{
+	padding-top: 105px;
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.bt{
+	border: solid 1px #2F4F4F;
+    border-radius: 3px;
+    color:#2F4F4F;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt:hover{
+	background-color:#E0E0E0;
+}
+
+.bt-area{
+    width: 500px;
+    height: 125px;
+    padding-left: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+video{
+	
+	padding-left: 5%;
+	margin-top: 3%;
+	width: 90%;
+}
+
+img {
+	border-style: none;
+}
+
+.center-word{
+    text-align: center;
+}
+
+/*header*/
+header{
+	background-color: #E0E0E0;
+	margin: 0;
+	height: 80px;
+	
+}
+.logo{
+	width: 150px;
+	padding-left: 16px;
+	padding-top: 13px;
+}
+
+/*footer*/
+footer{
+	background-color: #E0E0E0;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	
+}
+
+.footer-top{
+	display: flex;
+	flex-direction: column;
+}
+
+.big-logo{
+	margin-top: 50px;
+	width: 27%;
+}
+
+.footer-icon{
+	padding-left: 30%;
+	padding-right:30%;
+	margin-top: 20px;
+	display:flex;
+	justify-content: space-around;
+}
+
+.gif{
+	padding-left: 1%;
+	padding-right:1%;
+	height: 8vw;
+	margin-top: 20px;
+}
+
+.gift{
+	display:flex;
+	justify-content:center;
+	margin-right: 45px;
+}
+
+.avoid{
+	color:white;
+	font-size: x-small;
+	font-weight: lighter;
+}
+
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:30px;
+    bottom:31px;
+    display:none;
+    width:50px;
+    height:50px;
+    color:#E0E0E0;
+    background:#2F4F4F;
+    line-height:50px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(73, 60, 60, 0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#gotop :hover{
+    background:#0099CC;
+}
+
+.bg-color{
+    background-color: #E0E0E0;
+}
+
+.bg-color .navbar-nav .nav-link {
+    color: #2F4F4F;
+}
+
+.bg-color .nav-item.active .nav-link,
+.bg-color .nav-item:hover .nav-link {
+    color: #7b7b7b;
+}
+
+.navbar-btn {
+    border-color: #e0e0e0!important;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff!important;
+    background-color: #E0E0E0;
+    padding: 4px 6px !important;
+    margin: 0px 0px 0px 10px;
+}
+.navbar-btn:hover {
+    color: #FFF;
+    background-color: #f5f5f5 !important;
+    border-color: #E0E0E0!important;
+}
+
+.btn-primary {
+    border-color: #E0E0E0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+ 
+
+.main-area{
+    height: 100%;
+    background-color: #FFFAFA;
+}
+
+.small{
+    font-size: small;
+}
+
+/*news-area*/
+.line{
+    height: 1px;
+    width: 77vw;
+}
+
+.news-area{
+    padding-left: 11%;
+    padding-right: 11%;
+    color: #2F4F4F
+}
+
+.news-title{
+    margin-top: 25px;
+}
+
+.news-img{
+    width: 77vw;
+}
+
+@media (max-width: 769px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	p{
+		font-size: 0.9em;		
+	}
+	.bt{
+		width: 80px;
+		height: 40px;
+		font-size: 13px;
+	}
+	.btline{
+        height: 40px;
+	}
+	.bt-area{
+        width: 350px;
+    }
+}
+
+/*手機*/
+@media (max-width: 376px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 0.8em;		
+	}
+	.bt{
+		width: 60px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.btline{
+        height: 30px;
+	}
+	
+    .bt-area{
+        width: 230px;
+    }
 }
