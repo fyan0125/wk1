@@ -83,7 +83,7 @@ function App() {
 			<img className="gif" alt="1"src="../gif/Empress_of_Light.gif"/>
 			<img className="gif" alt="1"src="../gif/Skeletron_Prime_.gif"/>
 			<img className="gif" alt="1"src="../gif/queen_slime.gif"/>
-			<img className="gif" alt="1"ㄐsrc="../gif/Webp.net-gifmaker.gif"/>
+			<img className="gif" alt="2"src="../gif/Webp.net-gifmaker.gif"/>
 		
 			
 			
